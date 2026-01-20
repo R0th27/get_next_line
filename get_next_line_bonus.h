@@ -6,7 +6,7 @@
 /*   By: htoe <htoe@student.42bangkok.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 08:21:00 by htoe              #+#    #+#             */
-/*   Updated: 2026/01/21 01:01:52 by htoe             ###   ########.fr       */
+/*   Updated: 2026/01/21 02:23:32 by htoe             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 3
+#  define BUFFER_SIZE 128
 # endif
 
 # include <unistd.h>
