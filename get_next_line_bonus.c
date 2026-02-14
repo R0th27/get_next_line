@@ -6,7 +6,7 @@
 /*   By: htoe <htoe@student.42bangkok.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/19 08:24:04 by htoe              #+#    #+#             */
-/*   Updated: 2026/01/21 01:26:53 by htoe             ###   ########.fr       */
+/*   Updated: 2026/02/14 20:35:23 by htoe             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -114,7 +114,7 @@ char	*get_next_line(int fd)
 	static t_gnode	*cache[1024];
 	char			*str;
 
-	if (!BUFFER_SIZE)
+	if (fd < 0 || !BUFFER_SIZE)
 		return (NULL);
 	if (!cache[fd] || !find_nl(cache[fd]-> str))
 		read_to_list(fd, &cache[fd]);
